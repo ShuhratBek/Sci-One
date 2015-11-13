@@ -1,0 +1,32 @@
+<section id="category">
+    <div class="category">
+        <h1 class="name">{{category.name}}</h1>
+        <p class="total">{{category.total}} видео-записей</p>
+        <button type="button" class="subscribe-btn" ng-click="subscribed=!subscribed" ng-class="{'on':subscribed}">{{subscribed?'подписан':'подписаться'}}</button>
+    </div>
+    <ul class="videos">
+        <li ng-repeat="video in category.videos" class="item">
+            <div class="video">
+                <div class="center">
+                    <button class="play" ng-click="open()"></button>
+                </div>
+                <a href="#" class="avatar">
+                    <img ng-src="{{video.avatar}}" />
+                    <span class="name">{{video.name}}</span>
+                </a>
+                <span class="length">{{video.length}}</span>
+                <button ng-click="video.bookmark=!video.bookmark" class="bookmark" ng-class="{'on':video.bookmark}"></button>
+                <img ng-src="{{video.video}}" />
+            </div>
+            <div class="caption">
+                <h3>{{video.title}}</h3>
+                <div class="footer">
+                    <span class="watch">
+                        <img src="img/watch2.png" />
+                        {{video.time}}
+                    </span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>

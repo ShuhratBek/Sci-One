@@ -1,0 +1,54 @@
+<div class="video" ng-init="showInfo=true">
+    <div class="center">
+        <button class="play"></button>
+    </div>
+    <a href="#" class="avatar on">
+        <img ng-src="{{video.avatar}}" />
+        <span class="name">{{video.name}}</span>
+    </a>
+    <button class="comment-btn" ng-click="showInfo=true">
+        <img ng-src="./img/comments.png" />
+        {{video.comments.length}}
+    </button>
+    <button class="share-btn"></button>
+    <button ng-click="video.bookmark=!video.bookmark" class="bookmark" ng-class="{'on':video.bookmark}"></button>
+    <button class="info-btn" ng-click="showInfo=!showInfo">Показать информацию</button>
+    <img ng-src="{{video.video}}" />
+</div>
+<div ng-show="showInfo">
+    <div class="caption">
+        <h2 class="title">{{video.title}}</h2>
+        <div class="extra">
+            <span class="watch">
+                <img src="./img/watch3.png" />
+                {{video.time}}
+            </span>
+            <span class="tag">
+                <img src="./img/tag3.png" />
+                {{video.tag}}
+            </span>
+        </div>
+        <div class="desc">
+            <p>{{video.desc}}</p>
+        </div>
+    </div>
+    <div class="comments">
+        <div class="comment" ng-repeat="comment in video.comments">
+            <div class="info">
+                <img ng-src="{{comment.avatar}}" class="avatar" />
+                <h4 class="name">{{comment.name}}</h4>
+                <span class="watch">
+                    <img src="./img/watch4.png" />
+                    {{comment.time}}
+                </span>
+            </div>
+            <div class="message">
+                <p>{{comment.comment}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="compose">
+        <button class="send-btn" ng-click="addComment()"><img ng-src="./img/compose.png" /></button>
+        <input type="text" placeholder="Ответить" ng-model="comment" />
+    </div>
+</div>

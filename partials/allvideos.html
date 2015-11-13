@@ -1,0 +1,31 @@
+<section id="all-videos">
+    <ul class="videos">
+        <li ng-repeat="video in videos" class="item">
+            <div class="video">
+                <div class="center">
+                    <button class="play" ng-click="open()"></button>
+                </div>
+                <a href="#" class="avatar">
+                    <img ng-src="{{video.avatar}}" />
+                    <span class="name">{{video.name}}</span>
+                </a>
+                <span class="length">{{video.length}}</span>
+                <button ng-click="video.bookmark=!video.bookmark" class="bookmark" ng-class="{'on':video.bookmark}"></button>
+                <img ng-src="{{video.video}}" spinkit-image-preloader='wave-spinner' spinkit-image-preloader-class='rotating-plane-spinner' />
+            </div>
+            <div class="caption">
+                <h3>{{video.title}}</h3>
+                <div class="footer">
+                    <span class="watch">
+                        <img src="./img/watch2.png" />
+                        {{video.time}}
+                    </span>
+                    <span class="tag">
+                        <img src="./img/tag2.png" />
+                        {{video.tag}}
+                    </span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>

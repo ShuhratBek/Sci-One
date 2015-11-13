@@ -1,0 +1,189 @@
+@media (max-width: 320px){
+    
+}
+@media (max-width: 480px){
+    #last-video .content h1 {
+        font-size: 1.5em;
+    }
+    #last-video .control a {
+        padding: 30px 10px;
+    }
+    #last-video .content li {
+        display: block;
+        margin: 10px;
+        text-align: left;
+    }
+    #menu {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #menu .menu-content {
+        padding-right: 60px;
+    }
+    #menu .cols {
+        padding: 0 20px;
+    }
+    #menu .col1 {
+        width: 100%;
+    }
+    #menu .last-tweet {
+        margin-top: 50px;
+    }
+    #menu .social {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .videos > li.item {
+        width: 100%;
+    }
+    .category {
+        padding: 20px 75px 25px;
+    }
+    .category .control.left {
+        left: 20px;
+    }
+    .category .control.right {
+        right: 20px;
+    }
+}
+@media (max-width: 767px){
+    body {
+        font-size: 14px;
+    }
+    .header .social {
+        display: none;
+    }
+    .header .brand {
+        text-align: left;
+        left: 20px;
+    }
+    .video .length {
+        font-size: 0.8em;
+    }
+    .ngdialog-content {
+        width: 85%!important;
+    }
+    .ngdialog-close {
+        top: 10px!important;
+        right: 0px!important;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    #menu .cols {
+        padding: 0 30px;
+    }
+    #menu .col1 {
+        float: left;
+        width: 45%;
+        padding-top: 20px;
+    }
+    #menu .col2 {
+        float: left;
+        width: 45%;
+        margin-left: 35px;
+    }
+    #menu .social {
+        margin-top: 20px;
+    }
+    #menu .last-tweet {
+        margin-top: 35px;
+    }
+    .videos > li.item {
+        width: 50%;
+    }
+}
+@media (min-width: 768px){
+    #menu .cols {
+        padding: 0 130px;
+    }
+    #menu .col1 {
+        float: left;
+        width: 21%;
+        padding-top: 20px;
+    }
+    #menu .col2 {
+        float: left;
+        width: 43%;
+        margin-left: 19%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    body {
+        font-size: 14px;
+    }
+    .videos > li.item {
+        width: 33.33%;
+    }
+    #menu .cols {
+        padding: 0 30px;
+    }
+    #menu .col1 {
+        float: left;
+        width: 45%;
+        padding-top: 20px;
+    }
+    #menu .col2 {
+        float: left;
+        width: 45%;
+        margin-left: 35px;
+    }
+    #menu .social {
+        margin-top: 20px;
+    }
+    #menu .last-tweet {
+        margin-top: 35px;
+    }
+    .ngdialog-content {
+        width: 80%!important;
+    }
+}
+@media (max-width: 991px){
+    .videos .item {
+        padding: 20px;
+    }
+    .videos li.item:hover {
+        padding: 19px;
+    }
+    .videos div.owl-item:hover div.item {
+        padding: 18px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .videos > li.item {
+        width: 25%;
+    }
+    #menu .cols {
+        padding: 0 30px;
+    }
+    #menu .col1 {
+        float: left;
+        width: 45%;
+        padding-top: 20px;
+    }
+    #menu .col2 {
+        float: left;
+        width: 45%;
+        margin-left: 35px;
+    }
+    #menu .social {
+        margin-top: 20px;
+    }
+    #menu .last-tweet {
+        margin-top: 35px;
+    }
+}
+@media (min-width: 992px) {
+    .ngdialog-content {
+        width: 950px!important;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1919px){
+    .videos > li.item {
+        width: 25%;
+    }
+}
+@media (min-width: 1920px) {
+    #last-video .content{
+        padding: 0 26%;
+    }
+}

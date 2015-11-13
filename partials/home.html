@@ -1,0 +1,35 @@
+<section id="last-video">
+    <div maincarousel>
+        <div main-carousel-item ng-repeat="item in items">
+            <div style="background-image: url({{item.video}});" class="full-video"></div>
+            <div class="content">
+                <button class="play" ng-click="open()"></button>
+                <h1>{{item.title}}</h1>
+                <ul class="footer">
+                    <li class="user">
+                        <img ng-src="{{item.avatar}}" class="avatar" />
+                        <i>{{item.name}}</i>
+                    </li>
+                    <li class="watch">
+                        <img ng-src="./img/watch.png" />
+                        <span>{{item.time}}</span>
+                    </li>
+                    <li class="tag">
+                        <img ng-src="./img/tag.png" />
+                        <span>{{item.tag}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="control left">
+        <button class="owlcarousel_prev">
+            <img src="./img/left.png" />
+        </button>
+    </div>
+    <div class="control right">
+        <button class="owlcarousel_next">
+            <img src="./img/right.png" />
+        </button>
+    </div>
+</section>
